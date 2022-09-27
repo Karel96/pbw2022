@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat video di html</title>
+</head>
+<body>
+        <h2>Multimedia Files - HTML 5</h2>
+        <p>
+        <center>
+            <button onclick="playVid()" type="button">Play Video</button>
+            <button onclick="pauseVid()" type="button">Pause Video</button>
+            <button onclick="controlsEnable()" type="button">Controls ON</button>
+            <button onclick="controlsDisable()" type="button">Controls OFF</button>
+            <button onclick="cekDurasi()" type="button">Durasi Video</button>
+        </center>
+        </p>
+        <center>
+            <video id="videosaya">
+            <video>
+                <source src="Skroep.mp4" type="video/mp4">
+                Video File not support...
+            </video>
+        </center>
+    </p>
+    <p>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zIKxshOqlAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p align="center" class="style8"> Video Youtube </p>
+        </center>
+        </p>
+        </body>
+        <script>
+        var vid = document.getElementById("videosaya");
+
+        function cekDurasi (){
+            alert(vid.duration);
+        }
+
+        function playVid() {
+            vid.play();
+            vid.loop = true;
+        }
+
+        function pauseVid() {
+            vid.pause(); 
+        } 
+
+        function controlsEnable() {
+            vid.controls = true;
+            vid.load();
+        }
+
+        function controlsDisable() {
+            vid.controls = false;
+            vid.load();
+        }
+        
+        </script>
+        </html>
