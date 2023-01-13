@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: cyan;
+}
+footer {
+    padding: 8px;
+    color:aqua;
+    background-color: aliceblue;
+    text-align: right;
+    font-weight: bold;
+}
+.about{
+    font-size: 20px;
+    padding: 200px;
+    text-align: center;
+    color: aquamarine;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background-color: aqua;
+    padding: 5px;
+    text-align: right;
+    position: sticky;
+    top:0;
+    overflow: auto;
+}
